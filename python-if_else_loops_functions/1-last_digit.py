@@ -2,7 +2,8 @@
 import random
 number = random.randint(-10000, 10000)
 def lastnum(number):
-    return abs(number) % 10
+    return number % 10 if number >= 0 else -(-number%10)
+
 x = lastnum(number)
 
 if x > 5:
