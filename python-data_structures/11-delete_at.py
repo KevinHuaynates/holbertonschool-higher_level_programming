@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 def delete_at(my_list=[], idx=0):
-    if 0 <= idx < len(my_list):
-        my_list = my_list[:idx] + my_list[idx+1:]
-    return my_list
+    if idx < 0 or idx >= len(my_list):
+        return my_list
+    new_list = my_list[:idx] + my_list[idx + 1:]
+    return new_list
 
 if __name__ == "__main__":
-    delete_at = __import__('11-delete_at').delete_at
+
     my_list = [1, 2, 3, 4, 5]
     idx = 3
     new_list = delete_at(my_list, idx)
