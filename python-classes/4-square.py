@@ -12,6 +12,18 @@ class Square:
         """
         __init__ Method - Initializes a new instance of the Square class.
         """
+        self.size = size
+
+    def size(self):
+        """
+        size Getter Method - Retrieves the value of the size attribute.
+        """
+        return self.__size
+
+    def size(self, value):
+        """
+        size Setter Method - Sets the value of the size attribute.
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
