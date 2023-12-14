@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+"""
+Module documentation - This module contains the definition of the Square class.
+"""
+
 class Square:
     """
-    This is an empty class Square that defines a square.
+    Square class - Represents a square.
     """
     pass
