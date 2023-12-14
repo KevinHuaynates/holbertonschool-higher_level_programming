@@ -3,6 +3,7 @@
 Documentation Module - This module contains the definition of the Square class.
 """
 
+
 class Square:
     """
     Square Class - Represents a square.
