@@ -18,10 +18,10 @@ if __name__ == "__main__":
 
     try:
         print(my_square.size)
-    except AttributeError as e:
+    except Exception as e:
         print(e)
 
     try:
         print(my_square.__size)
-    except AttributeError as e:
+    except Exception as e:
         print(e)
