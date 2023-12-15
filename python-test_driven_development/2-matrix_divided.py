@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Module divide all elements of a matrix.
+"""
 def matrix_divided(matrix, div):
     """
     Divide all elements of a matrix.
