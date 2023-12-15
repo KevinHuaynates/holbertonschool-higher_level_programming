@@ -10,9 +10,14 @@ def text_indentation(text):
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    indented_text = ""
+
+    current_line = ""
+
     for char in text:
-        indented_text += char
         if char in ".?:":
-            indented_text += "\n\n"
-    print(indented_text.strip())
+            print(current_line.strip() + "\n\n", end="")
+            current_line = ""
+        else:
+            current_line += char
+        if current_line:
+            print(current_line.strip())
