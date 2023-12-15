@@ -1,9 +1,9 @@
 # Test Cases for add_integer
 
 # Case 1: Basic addition
-add_integer(1, 2)
+>>>add_integer(1, 2)
 3
 
 # Case 2: Using default value for b
-add_integer(100, -2)
+>>>add_integer(100, -2)
 98
