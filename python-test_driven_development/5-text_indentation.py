@@ -17,3 +17,6 @@ def text_indentation(text):
             buffer = ""
     if buffer:
         print(buffer.strip())
+
+if __name__ == "__main__":
+    text_indentation("Holberton School")
