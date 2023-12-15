@@ -1,29 +1,27 @@
+# Setup
+>>> from 0-add_integer import add_integer
+
 # Test Cases for add_integer
 
 # Case 1: Basic addition
->>> from 0-add_integer import add_integer
 >>> add_integer(1, 2)
 3
 
 # Case 2: Using default value for b
->>> from 0-add_integer import add_integer
 >>> add_integer(100, -2)
 98
 
 # Case 3: Handling float inputs
->>> from 0-add_integer import add_integer
 >>> add_integer(2)
 100
 
 # Case 4: Error handling for non-integer or non-float inputs
->>> from 0-add_integer import add_integer
 >>> add_integer(4, "School")
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
 # Case 5: Error handling for None
->>> from 0-add_integer import add_integer
 >>> add_integer(None)
 Traceback (most recent call last):
     ...
