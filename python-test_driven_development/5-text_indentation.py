@@ -12,7 +12,7 @@ def text_indentation(text):
     for char in text:
         buffer += char
         if char in ['.', '?', ':']:
-            print(buffer.strip())
+            print(buffer.strip()+" ")
             buffer = ""
     if buffer:
         print(buffer.strip())
