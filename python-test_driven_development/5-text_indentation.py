@@ -4,6 +4,7 @@ Module: text_indentation
 Description: This module provides a simple Python script.
 """
 
+
 def text_indentation(text):
     """Function: atext_indentation(text)"""
     if not isinstance(text, str):
@@ -18,6 +19,7 @@ def text_indentation(text):
 
     if buffer:
         print(buffer.strip())
+
 
 if __name__ == "__main__":
     text_indentation("Holberton School")
