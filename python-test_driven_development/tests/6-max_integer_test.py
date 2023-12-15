@@ -27,5 +27,8 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer([1, 'two', 3, 4])
 
+    def test_max_integer_one_element_list(self):
+        self.assertEqual(max_integer([42]), 42)
+
 if __name__ == '__main__':
     unittest.main()
