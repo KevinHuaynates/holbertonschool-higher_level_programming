@@ -1,0 +1,44 @@
+# Test Cases for matrix_divided
+
+# Case 1: Basic division with positive integers
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+# Case 2: Division by a float
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 3.5)
+[[0.29, 0.57, 0.86], [1.14, 1.43, 1.71]]
+
+# Case 3: Division by a negative number
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, -2)
+[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
+
+# Case 4: Division by zero (should raise a ZeroDivisionError)
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+
+# Case 5: Non-numeric divisor (should raise a TypeError)
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 'abc')
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+# Case 6: Non-numeric matrix (should raise a TypeError)
+>>> matrix = 'not_a_matrix'
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Case 7: Rows with different sizes (should raise a TypeError)
+>>> matrix = [[1, 2, 3], [4, 5]]
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
