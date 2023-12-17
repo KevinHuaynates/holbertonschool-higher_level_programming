@@ -51,6 +51,14 @@ class Rectangle:
             return "\n".join(["#" * self.__width
                              for _ in range(self.__height)])
 
+    def __str__(self):
+        """Method that returns a string representation of the rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            return "\n".join(["#" * self.__width for _ in
+                             range(self.__height)])
+
     def __repr__(self):
         """Method that returns a string representation of the rectangle
         that can be used by eval()"""
