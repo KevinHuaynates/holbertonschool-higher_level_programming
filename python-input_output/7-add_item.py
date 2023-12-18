@@ -6,8 +6,6 @@ Script that adds all arguments to a Python list and then saves them to a file.
 import sys
 from os.path import exists
 from json import load, dump
-from pathlib import Path
-from importlib import import_module
 
 
 def save_to_json_file(my_obj, filename):
