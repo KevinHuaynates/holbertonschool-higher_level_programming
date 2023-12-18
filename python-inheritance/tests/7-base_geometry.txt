@@ -1,0 +1,14 @@
+# Command 1: Valid integer
+bg.integer_validator("my_int", 12)
+
+# Command 2: Valid integer
+bg.integer_validator("width", 89)
+
+# Command 3: Invalid, should raise a TypeError
+bg.integer_validator("name", "John")
+
+# Command 4: Invalid, should raise a ValueError
+bg.integer_validator("age", 0)
+
+# Command 5: Invalid, should raise a ValueError
+bg.integer_validator("distance", -4)
