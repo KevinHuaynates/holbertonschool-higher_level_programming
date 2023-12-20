@@ -1,5 +1,5 @@
---script to list all cities in the database hbtn_0d_usa
-SELECT cities.id, cities.name, (SELECT states.name FROM states WHERE states.id = cities.state_id) AS state_name
+-- Lista todas las ciudades contenidas en la base de datos hbtn_0d_usa.
+SELECT cities.id, cities.name, states.name
 FROM cities
-ORDER BY cities.id;
-
+JOIN states ON cities.state_id = states.id
+ORDER BY cities.id ASC;
