@@ -1,3 +1,2 @@
--- Add a new column to the table first_table
-ALTER TABLE first_table
-ADD COLUMN new_column_name VARCHAR(256);
+-- Insert a new row into the table first_table
+INSERT INTO first_table (id, name) VALUES (89, 'Best School');
