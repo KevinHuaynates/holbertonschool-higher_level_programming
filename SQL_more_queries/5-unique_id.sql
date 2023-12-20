@@ -1,7 +1,9 @@
---script para crear table unique_id
+-- 5. Unique ID: ID único
+
+USE hbtn_0d_2;
+
 CREATE TABLE IF NOT EXISTS unique_id (
- id INT DEFAULT 1,
- name VARCHAR(256),
- UNIQUE (id)
-);
+ id INT DEFAULT 1 UNIQUE,
+ name VARCHAR(256)
+ );
 
