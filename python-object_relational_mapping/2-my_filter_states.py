@@ -1,23 +1,6 @@
 #!/usr/bin/python3
 """
 Script to filter states by user input
-
-Usage:
-    ./2-my_filter_states.py <username> <password> <database> <state_name>
-
-Connects to a MySQL server running on localhost at port 3306 and
-displays all values in the states table where name matches the provided state_name.
-
-Results are sorted in ascending order by states.id.
-
-Arguments:
-    - username: MySQL username
-    - password: MySQL password
-    - database: Database name
-    - state_name: State name to be searched
-
-Example:
-    ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 """
 
 import MySQLdb
@@ -36,6 +19,7 @@ if __name__ == "__main__":
     query = "SELECT * FROM states WHERE name=%s ORDER BY id ASC"
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
+    
     for row in rows:
         print(row)
 
