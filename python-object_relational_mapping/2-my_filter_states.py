@@ -1,6 +1,8 @@
 import MySQLdb
 import sys
 
+"""Modulo: Script to filter states by user input"""
+
 if __name__ == "__main__":
     if len(sys.argv) != 5:
         print("Usage: {} <username> <password> <database> <state_name>".format(sys.argv[0]))
