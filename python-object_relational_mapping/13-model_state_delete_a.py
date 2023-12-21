@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Script to delete all State objects
+Script that deletes all State objects with a name containing the letter a
 """
 
 import sys
-from model_state import Base, State
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
+from model_state import Base, State
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
@@ -19,13 +19,14 @@ if __name__ == "__main__":
     session = Session(engine)
 
     try:
-        result = session.query(State.name, City.id, City.name).join(City).order_by(City.id).all()
-        for state_name, city_id, city_name in result:
-            print("{}: ({}) {}".format(state_name, city_id, city_name))
+        delete_query = text("DELETE FROM states WHERE name LIKE :pattern")
+        session.execute(delete_query, {"pattern": "%a%"})
+
+        session.commit()
 
     except Exception as e:
         print("Error:", e)
+        session.rollback()
 
     finally:
         session.close()
-
