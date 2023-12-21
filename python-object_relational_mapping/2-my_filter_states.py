@@ -1,7 +1,9 @@
-import MySQLdb
-import sys
+#!/usr/bin/python3
 
 """Modulo: Script to filter states by user input"""
+
+import MySQLdb
+import sys
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
