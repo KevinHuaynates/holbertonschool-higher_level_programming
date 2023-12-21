@@ -19,11 +19,9 @@ if __name__ == "__main__":
     session = Session(engine)
 
     try:
-        states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
-        for state in states_to_delete:
-            session.delete(state)
-
-        session.commit()
+        result = session.query(State.name, City.id, City.name).join(City).order_by(City.id).all()
+        for state_name, city_id, city_name in result:
+            print("{}: ({}) {}".format(state_name, city_id, city_name))
 
     except Exception as e:
         print("Error:", e)
