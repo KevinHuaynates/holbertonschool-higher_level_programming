@@ -1,16 +1,27 @@
-# File is present
+# Test case for MyList class
 
-First line contains #!/usr/bin/python3
+# Importing the MyList class
+from 1-my_list import MyList
 
-You are not allowed to import any module
+# Creating an instance of MyList
+my_list = MyList()
 
-Module is documented
+# Appending elements to the list
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
 
-Class is documented
+# Testing the regular print
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-Correct output - case: class creation, multiple appends, regular print and sorted print
+# Testing the print_sorted method
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
 
-Correct output - case: class creation, regular print and sorted print
-
-Correct output - case: class creation, multiple appends (negative number), regular print and sorted print
+# Testing that the original list remains unchanged
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
