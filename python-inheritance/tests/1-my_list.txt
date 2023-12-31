@@ -1,4 +1,5 @@
-guillaume@ubuntu:~/$ cat tests/1-my_list.txt
+>>> from 1-my_list import MyList
+
 >>> MyList.__doc__
 'A class that inherits from list and adds a method to print sorted list.'
 
@@ -45,5 +46,4 @@ True
 []
 >>> print(empty_list)
 []
-guillaume@ubuntu:~/$
 
