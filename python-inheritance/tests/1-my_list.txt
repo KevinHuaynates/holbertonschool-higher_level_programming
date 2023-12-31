@@ -3,7 +3,7 @@
 Test cases for MyList class.
 """
 
-from 1_my_list import MyList
+from 1-my_list import MyList
 
 # Test case 1: Create an empty list and print it
 my_list = MyList()
