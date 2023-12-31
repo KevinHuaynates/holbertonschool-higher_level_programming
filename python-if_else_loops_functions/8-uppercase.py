@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 def uppercase(s):
     result = ""
     count = 0
@@ -11,7 +10,7 @@ def uppercase(s):
             result += char
         count += 1
 
-    print(result, end='\n' if count > 0 else '')
+    print("{}".format(result), end='\n' if count > 0 else '')
 
 
 # Test cases
