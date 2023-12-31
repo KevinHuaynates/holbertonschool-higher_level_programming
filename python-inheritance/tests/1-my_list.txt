@@ -1,6 +1,6 @@
 # En el archivo de prueba: tests/1-my_list.txt
 # Importa la clase MyList del módulo 1_my_list
->>> from 1_my_list import MyList
+>>> from 1-my_list import MyList
 
 # Crea una instancia de MyList
 >>> my_list = MyList()
