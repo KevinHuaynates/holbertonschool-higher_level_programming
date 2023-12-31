@@ -1,22 +1,31 @@
-# This is 1-my_list.txt
+#!/usr/bin/python3
+"""
+Test cases for MyList class.
+"""
 
-# Test Case 1: Importing MyList and creating an instance
-from 1-my_list import MyList
+from 1_my_list import MyList
+
+# Test case 1: Create an empty list and print it
 my_list = MyList()
+print(my_list)  # []
 
-# Test Case 2: Appending elements to the list
+# Test case 2: Append elements to the list and print
 my_list.append(1)
 my_list.append(4)
 my_list.append(2)
 my_list.append(3)
 my_list.append(5)
+print(my_list)  # [1, 4, 2, 3, 5]
 
-# Test Case 3: Printing the original list
-print(my_list)
+# Test case 3: Print the sorted list
+my_list.print_sorted()  # [1, 2, 3, 4, 5]
 
-# Test Case 4: Printing the sorted list
-my_list.print_sorted()
+# Test case 4: Append negative numbers and print
+my_list.append(-1)
+my_list.append(-3)
+my_list.append(-2)
+print(my_list)  # [1, 4, 2, 3, 5, -1, -3, -2]
 
-# Test Case 5: Printing the original list again
-print(my_list)
+# Test case 5: Print the sorted list after appending negative numbers
+my_list.print_sorted()  # [-3, -2, -1, 1, 2, 3, 4, 5]
 
