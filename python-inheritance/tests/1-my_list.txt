@@ -1,28 +1,29 @@
+# En el archivo de prueba: tests/1-my_list.txt
 # Importa la clase MyList del módulo 1_my_list
-from 1_my_list import MyList
+>>> from 1_my_list import MyList
 
 # Crea una instancia de MyList
-my_list = MyList()
+>>> my_list = MyList()
 
 # Prueba 1: Imprime la lista original
-print(my_list)
+>>> print(my_list)
 []
 # Prueba 2: Agrega elementos a la lista
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-my_list.append(3)
-my_list.append(5)
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
 
 # Prueba 3: Imprime la lista después de agregar elementos
-print(my_list)
+>>> print(my_list)
 [1, 4, 2, 3, 5]
 
 # Prueba 4: Imprime la lista ordenada
-my_list.print_sorted()
+>>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
 
 # Prueba 5: Imprime la lista después de ordenar
-print(my_list)
+>>> print(my_list)
 [1, 4, 2, 3, 5]
 
