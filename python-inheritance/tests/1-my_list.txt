@@ -1,8 +1,1 @@
-my_list = MyList()  # Esta es la instancia de tu lista
-
-# Ahora puedes realizar operaciones en my_list
-
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-
+cat tests/1-my_list.txt
