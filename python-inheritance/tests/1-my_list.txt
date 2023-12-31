@@ -1,5 +1,16 @@
-from 1-my_list import MyList
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.print_sorted()
+# File is present
+
+First line contains #!/usr/bin/python3
+
+You are not allowed to import any module
+
+Module is documented
+
+Class is documented
+
+Correct output - case: class creation, multiple appends, regular print and sorted print
+
+Correct output - case: class creation, regular print and sorted print
+
+Correct output - case: class creation, multiple appends (negative number), regular print and sorted print
 
