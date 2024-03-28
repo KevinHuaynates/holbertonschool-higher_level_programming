@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const redHeader = document.getElementById('red_header')
   // Add a click event listener to the red_header tag
   redHeader.addEventListener('click', () => {
-    // Update the text color of the header element to red
-    header.style.color = '#FF0000'
+    // Adds the class 'red' to the header element when the user clicks
+    header.classList.add('red')
   })
 })

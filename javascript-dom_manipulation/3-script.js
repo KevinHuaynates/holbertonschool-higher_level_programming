@@ -1,20 +1,16 @@
-// Selección del elemento con ID toggle_header
-const toggleHeaderElement = document.getElementById('toggle_header');
-
-// Función que se ejecuta cuando se hace clic en el elemento con ID toggle_header
-function toggleHeaderClass() {
-    // Selección del elemento de encabezado
-    const headerElement = document.querySelector('header');
-
-    // Si el elemento de encabezado tiene la clase 'red', cambiarla a 'green'; de lo contrario, cambiarla a 'red'
-    if (headerElement.classList.contains('red')) {
-        headerElement.classList.remove('red');
-        headerElement.classList.add('green');
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Select the tag with id toggle_header and header element
+  const header = document.querySelector('header')
+  const toggleHeader = document.getElementById('toggle_header')
+  // Add a click event listener to the toggle_header id tag
+  toggleHeader.addEventListener('click', () => {
+    // Toggles the class 'red' and 'green' to the header element when the user clicks
+    const greenClass = header.classList.contains('green')
+    if (greenClass) {
+      header.classList.replace('green', 'red')
     } else {
-        headerElement.classList.remove('green');
-        headerElement.classList.add('red');
+      header.classList.replace('red', 'green')
     }
-}
-
-// Agregar un evento de clic al elemento con ID toggle_header
-toggleHeaderElement.addEventListener('click', toggleHeaderClass);
+  })
+})
