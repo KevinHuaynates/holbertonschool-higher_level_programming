@@ -1,1 +1,1 @@
-Javascript - SCIPTS
+Javascript DOM Manipulation

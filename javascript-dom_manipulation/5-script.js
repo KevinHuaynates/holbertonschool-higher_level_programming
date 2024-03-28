@@ -1,14 +1,10 @@
-// Selección del elemento con ID update_header
-const updateHeaderElement = document.getElementById('update_header');
-
-// Función que se ejecuta cuando se hace clic en el elemento con ID update_header
-function updateHeader() {
-    // Selección del elemento de encabezado
-    const headerElement = document.querySelector('header');
-    
-    // Actualización del texto del elemento de encabezado
-    headerElement.textContent = 'New Header!!!';
-}
-
-// Agregar un evento de clic al elemento con ID update_header
-updateHeaderElement.addEventListener('click', updateHeader);
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Select the tag with id update_header and header element
+  const header = document.querySelector('header')
+  const updateHeader = document.querySelector('#update_header')
+  updateHeader.addEventListener('click', () => {
+    // Updates the text of the header element to 'New Header!!!' when the user clicks
+    header.textContent = 'New Header!!!'
+  })
+})
